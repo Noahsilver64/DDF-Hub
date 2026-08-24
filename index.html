@@ -16,6 +16,120 @@
                   text-align: center;
                   font-family: "Times New Roman", Times, serif;
             }
+         
+    /* Import Modern Google Fonts */
+    @import url('https://googleapis.com');
+
+    /* Global Base Styling & Resets */
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      padding: 40px 20px;
+      line-height: 1.5;
+    }
+
+    /* Layout Responsive Grid */
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 32px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    /* Card Item Container */
+    .card {
+      background-color: #ffffff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+      transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275), 
+                  box-shadow 0.4s ease;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Smooth Lift Hover Effect */
+    .card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 20px 30px rgba(15, 23, 42, 0.12);
+    }
+
+    /* Proportional Header Image */
+    .card-image {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+      display: block;
+    }
+
+    /* Content Area Layout */
+    .card-content {
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+
+    /* Dynamic Badges */
+    .card-tag {
+      align-self: flex-start;
+      font-size: 11px;
+      text-transform: uppercase;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      background-color: #e0f2fe;
+      color: #0369a1;
+      padding: 6px 10px;
+      border-radius: 6px;
+      margin-bottom: 16px;
+    }
+
+    /* Elegant Serif Titles */
+    .card-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 26px;
+      color: #0f172a;
+      margin: 0 0 12px 0;
+      font-weight: 700;
+    }
+
+    /* Clean Body Text */
+    .card-description {
+      font-size: 15px;
+      color: #64748b;
+      line-height: 1.7;
+      margin: 0 0 24px 0;
+      flex-grow: 1;
+    }
+
+    /* Interactive Buttons */
+    .card-btn {
+      text-align: center;
+      text-decoration: none;
+      background-color: #2563eb;
+      color: #ffffff;
+      padding: 12px 24px;
+      font-size: 14px;
+      font-weight: 500;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+    }
+
+    .card-btn:hover {
+      background-color: #1d4ed8;
+    }
+
+    .card-btn:active {
+      transform: scale(0.98);
+    }
 
 
         </style>
@@ -31,8 +145,46 @@
             This page includes things such as the time limit, maximum number of people, and, when possible, a video example of the event! Enjoy!
         </p1>
         <br>
-        <br>
+         <div class="card-grid">
+             
+          <div class="card">
+            <img src="https://unsplash.com" alt="Drama" class="card-image">
+            <div class="card-content">
+              <span class="card-tag">Arts & Performance</span>
+              <h2 class="card-title">Drama</h2>
+              <p class="card-description">
+                Step into the spotlight and explore acting, stagecraft, and storytelling. Build confidence and express yourself through performance.
+              </p>
+              <a href="#" class="card-btn">Explore Drama</a>
+            </div>
+          </div>
 
-</div>
+ 
+          <div class="card">
+            <img src="https://unsplash.com" alt="Debate" class="card-image">
+            <div class="card-content">
+              <span class="card-tag">Speech & Logic</span>
+              <h2 class="card-title">Debate</h2>
+              <p class="card-description">
+                Sharpen your critical thinking, craft compelling arguments, and clash with opposing views on pressing global issues.
+              </p>
+              <a href="#" class="card-btn">Explore Debate</a>
+            </div>
+          </div>
+
+
+          <div class="card">
+            <img src="https://unsplash.com" alt="Forensics" class="card-image">
+            <div class="card-content">
+              <span class="card-tag">Public Speaking</span>
+              <h2 class="card-title">Forensics</h2>
+              <p class="card-description">
+                Master the art of competitive public speaking, oral interpretation, and original oratory to captivate your audience.
+              </p>
+              <a href="#" class="card-btn">Explore Forensics</a>
+            </div>
+          </div>
+        </div>
+
     </body>
 </html>
