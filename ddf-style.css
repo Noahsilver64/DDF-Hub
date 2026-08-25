@@ -179,7 +179,6 @@ footer {
     font-size: 18px;
     color: var(--text-light);
     border-radius: var(--border-radius-md);
-    border: 1px solid rgba(227, 228, 247, 0.2);
     
 
     position: fixed;
