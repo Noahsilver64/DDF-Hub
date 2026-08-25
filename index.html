@@ -11,14 +11,14 @@
 
             :root {
                 /* Color Palette */
-                --bg-main: #0a0a3c;          /* Rich deep navy */
-                --bg-surface: #dbdbdb;       /* Pure white for cards */
-                --bg-header: #1a1a5c;        /* Slightly lighter navy for contrast */
-                --text-light: #e3e4f7;       /* Soft light blue/white */
-                --text-dark-main: #0f172a;   /* Deep slate for card titles */
-                --text-dark-sub: #64748b;    /* Muted gray for descriptions */
-                --brand-accent: #2563eb;     /* Vibrant blue for links/buttons */
-                --brand-accent-hover: #1d4ed8;
+                --bg-main: #0a160a;          /* Rich deep navy */
+                --bg-surface: #4cc460;       /* Pure white for cards */
+                --bg-header: #193d1e;        /* Slightly lighter navy for contrast */
+                --text-light: #d2fcd7;       /* Soft light blue/white */
+                --text-dark-main: #121d12;   /* Deep slate for card titles */
+                --text-dark-sub: #181a18;    /* Muted gray for descriptions */
+                --brand-accent: #0b361d;     /* Vibrant blue for links/buttons */
+                --brand-accent-hover: #145730;
                 
                 /* Borders & Box Models */
                 --border-radius-lg: 16px;
@@ -58,6 +58,7 @@
                 max-width: 1140px;
                 margin: 0 auto 30px auto;
                 box-shadow: var(--box-shadow-subtle);
+                border: 1px solid rgba(227, 228, 247, 0.2);
             }
 
             header h1 {
@@ -66,7 +67,7 @@
                 letter-spacing: 0.5px;
             }
 
-            /* Styled introduction text box layout */
+
             .intro-box {
                 max-width: 1140px;
                 margin: 0 auto 40px auto;
@@ -74,10 +75,9 @@
                 text-align: center;
                 font-size: 17px;
                 color: var(--text-light);
-                background-color: rgba(255, 255, 255, 0.06); /* Semi-transparent blend */
-                border: 1px solid rgba(227, 228, 247, 0.2);  /* Crisp subtle border line */
+                background-color: rgba(255, 255, 255, 0.06); 
+                border: 1px solid rgba(227, 228, 247, 0.2);  
                 border-radius: var(--border-radius-md);
-                backdrop-filter: blur(4px); /* Modern soft depth */
             }
 
             footer {
@@ -198,7 +198,7 @@
             <div class="card-content">
               <h2 class="card-title">Drama</h2>
               <p class="card-description">
-                Step into the spotlight and explore acting, stagecraft, and storytelling. Build confidence and express yourself through performance.
+                Drama is the art of acting! In DDF, you can do acting events by yourself of with your friends.
               </p>
               <a href="./drama.html" class="card-btn">Explore Drama</a>
             </div>
@@ -210,7 +210,7 @@
             <div class="card-content">
               <h2 class="card-title">Debate</h2>
               <p class="card-description">
-                Sharpen your critical thinking, craft compelling arguments, and clash with opposing views on pressing global issues.
+                It's pretty <strong>Debatable</strong> what the best event in DDF is... See what I did there??
               </p>
               <a href="./debate.html" class="card-btn">Explore Debate</a>
             </div>
@@ -222,7 +222,7 @@
             <div class="card-content">
               <h2 class="card-title">Forensics</h2>
               <p class="card-description">
-                Master the art of competitive public speaking, oral interpretation, and original oratory to captivate your audience.
+                "Forensics! That must mean we'll see dead bodies!" <br> NO! Forensics is the art of <em>Public Speaking</em>. :D
               </p>
               <a href="./forensics.html" class="card-btn">Explore Forensics</a>
             </div>
@@ -232,7 +232,7 @@
 
 
         <footer>
-            <p>
+            <p style="margin-top: 60px;">
               Copyright © 2026 Noah Coleman.
             </p>
             
