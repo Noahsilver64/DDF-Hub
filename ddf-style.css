@@ -186,7 +186,8 @@ footer {
     left: 0;
     width: 100%;
     z-index: 999;
-    margin-bottom: 80px;
+    padding: 14px 20px;
+    min-height: 64px;
 
     display: flex;
     justify-content: space-evenly;
