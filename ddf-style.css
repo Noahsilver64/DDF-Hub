@@ -226,3 +226,9 @@ footer a {
     margin-block: 40px;
 
 }
+
+.event {
+  display: flex;       
+  align-items: center;   
+  gap: 20px;             
+}
