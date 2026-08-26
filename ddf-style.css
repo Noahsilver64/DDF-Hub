@@ -267,3 +267,9 @@ footer a {
   border-bottom: 1px solid var(--bg-main);
   text-align: left;
 }
+
+.tableformat {display: flex;
+            flex-direction: column;
+            gap: 32px;
+            align-items: center;
+}
