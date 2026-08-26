@@ -216,6 +216,12 @@ footer a {
             text-align: center;
 }
 
+.alumni-list {
+    list-style-position: inside;
+    display: inline-block;
+    text-align: left;
+}
+
 .spacer {
     margin-block: 40px;
 
