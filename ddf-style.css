@@ -215,3 +215,8 @@ footer a {
 .explanation {
             text-align: center;
 }
+
+.spacer {
+    margin-block: 40px;
+
+}
