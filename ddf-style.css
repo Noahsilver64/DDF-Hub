@@ -69,7 +69,7 @@ header h1 {
 }
 
 .intro-box {
-    max-width: 1140px;
+    max-width: 720px;
     margin: 0 auto 40px auto;
     padding: 30px 40px;
     text-align: center;
@@ -203,4 +203,10 @@ footer {
 .footer a {
     color: inherit;         
     text-decoration: none;  
+}
+
+.small-text {color: inherit;
+             text-decoration: none;
+             font-size: 16px;
+
 }
