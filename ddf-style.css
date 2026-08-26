@@ -243,9 +243,8 @@ footer a {
 }
 
 .event img {
-  width: 100%;
-  max-width: 100%;
-  height: auto;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   border-radius: var(--border-radius-md);
   flex: 1;
@@ -259,6 +258,7 @@ footer a {
   font-size: 14px;
   color: var(--text-light);
   background-color: var(--bg-header);
+  border-radius: var(--border-radius-md);
 }
 
 .cheat-sheet th,
