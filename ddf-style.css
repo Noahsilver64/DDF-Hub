@@ -205,12 +205,12 @@ footer {
     text-decoration: none;  
 }
 
-small-text {color: inherit;
+.small-text {color: inherit;
              text-decoration: none;
              font-size: 16px;
 
 }
 
-explanation {
+.explanation {
             text-align: center;
 }
