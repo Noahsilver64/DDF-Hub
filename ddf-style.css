@@ -246,6 +246,7 @@ footer a {
   width: 300px;
   height: 300px;
   object-fit: cover;
+  flex-shrink: 0;
   border-radius: var(--border-radius-md);
   box-shadow: var(--box-shadow-subtle);
 }
