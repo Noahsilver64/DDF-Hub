@@ -7,124 +7,6 @@
     <title>Drama</title>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="ddf-style.css">
-    <style>
-      /* Grid wrapper for event cards */
-      .events-grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-        gap: 24px;
-        align-items: start;
-      }
-
-      /* Individual event card */
-      .event {
-        display: flex;
-        gap: 16px;
-        padding: 16px;
-        border-radius: var(--border-radius-md, 8px);
-        background: var(--card-bg, #fff);
-        box-shadow: 0 2px 8px rgba(0,0,0,0.06);
-        align-items: flex-start;
-      }
-
-      /* Image sizing and spacing. The image will fill up to a max width and a fixed height
-         so it visually lines up across cards. object-fit:cover keeps aspect ratio while
-         cropping if needed. A small margin-top creates a small gap from the card top. */
-      .event-img {
-        max-width: 300px;
-        width: 100%;
-        height: 220px;
-        object-fit: cover;
-        border-radius: 6px;
-        margin-top: 8px; /* small gap between top of card and image */
-        flex-shrink: 0;
-      }
-
-      /* Ensure the content area grows and stacks nicely */
-      .tableformat {
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-      }
-
-      /* Make tables and headings inside the card take available space */
-      .event h2, .event h5, .event .cheat-sheet, .event .card-btn {
-        margin: 4px 0;
-      }
-
-      /* Button styling for card actions */
-      .card-btn {
-        display: inline-block;
-        margin-top: 8px;
-        padding: 8px 14px;
-        background: var(--accent, #0b5cff);
-        color: #ffffff;
-        text-decoration: none;
-        border-radius: 8px;
-        border: 1px solid rgba(0,0,0,0.08);
-        box-shadow: 0 2px 6px rgba(11,92,255,0.12);
-        font-weight: 600;
-        font-size: 0.95rem;
-        line-height: 1;
-        transition: transform .08s ease, box-shadow .12s ease, background .12s ease;
-      }
-
-      .card-btn:hover {
-        transform: translateY(-2px);
-        box-shadow: 0 8px 18px rgba(11,92,255,0.12);
-        background: var(--accent-dark, #084ed6);
-      }
-
-      .card-btn:active {
-        transform: translateY(0);
-        box-shadow: 0 2px 6px rgba(11,92,255,0.12);
-      }
-
-      .card-btn:focus {
-        outline: 3px solid rgba(11,92,255,0.18);
-        outline-offset: 2px;
-      }
-
-      /* Navbar link improvements so the header buttons match the card buttons visually */
-      .navbar {
-        display: flex;
-        gap: 12px;
-        padding: 12px 16px;
-        align-items: center;
-      }
-
-      .navbar a {
-        padding: 6px 10px;
-        border-radius: 6px;
-        text-decoration: none;
-        color: inherit;
-        background: transparent;
-        transition: background .12s ease, transform .08s ease;
-        font-weight: 600;
-      }
-
-      .navbar a:hover {
-        background: rgba(0,0,0,0.04);
-        transform: translateY(-1px);
-      }
-
-      @media (max-width: 520px) {
-        .event {
-          flex-direction: column;
-          align-items: stretch;
-        }
-
-        .event-img {
-          height: 180px;
-          max-width: 100%;
-          margin-top: 0;
-        }
-
-        .card-btn {
-          width: fit-content;
-        }
-      }
-    </style>
   </head>
   
   <body>
@@ -144,37 +26,11 @@
 
     <hr style="margin-block: 40px;">
 
-    <!-- Grid container starts here -->
-    <div class="events-grid">
-
-      <div class="event">
-        <img class="event-img" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder">
-        <div class="tableformat">
-          <div style="flex-direction: row;">
-            <h2>Duet Acting</h2>
-            <h5>Cheat Sheet</h5>
-            <table class="cheat-sheet" style="border-radius: var(--border-radius-md);">
-              <tr>
-                <th>Time Limit</th>
-                <th>Maximum Number of People</th>
-                <th>Props Allowed</th>
-              </tr>
-              <tr>
-                <td>10 Minutes (15 second grace period)</td>
-                <td><strong>Must be two people</strong></td>
-                <td>Two chairs and a table are given, other props allowed</td>
-              </tr>
-            </table>
-          <a href="./duet-acting" class="card-btn">Explore</a>
-          </div>
-        </div>
-      </div>
-      
-
-      <div class="event">
-        <img class="event-img" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder">
-        <div class="tableformat">
-          <h2>Improvisational Duet Acting</h2>
+    <a href="./duet" style="color: inherit; text-decoration: none;">
+    <div class="event">
+      <img src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder" style="height: auto; width: 300px;">
+      <div class="tableformat">
+          <h2>Duet Acting</h2>
           <h5>Cheat Sheet</h5>
           <table class="cheat-sheet" style="border-radius: var(--border-radius-md);">
             <tr>
@@ -183,57 +39,79 @@
               <th>Props Allowed</th>
             </tr>
             <tr>
-              <td>7 Minutes (15 second grace period)</td>
+              <td>10 Minutes (15 second grace period)</td>
               <td><strong>Must be two people</strong></td>
-              <td>Two chairs and a table</td>
+              <td>Two chairs and a table are given, other props allowed</td>
             </tr>
           </table>
         </div>
       </div>
-
-      <div class="event">
-        <img class="event-img" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder">
-        <div class="tableformat">
-          <h2>Pantomime</h2>
-          <h5>Cheat Sheet</h5>
-          <table class="cheat-sheet" style="border-radius: var(--border-radius-md);">
-            <tr>
-              <th>Time Limit</th>
-              <th>Maximum Number of People</th>
-              <th>Props Allowed</th>
-            </tr>
-            <tr>
-              <td>8 Minutes</td>
-              <td>No maximum (though 2-3 is reccomended)</td>
-              <td>1 chair per performer</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
-      <div class="event">
-        <img class="event-img" src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder">
-        <div class="tableformat">
-          <h2>Reader's Theater</h2>
-          <h5>Cheat Sheet</h5>
-          <table class="cheat-sheet" style="border-radius: var(--border-radius-md);">
-            <tr>
-              <th>Time Limit</th>
-              <th>Maximum Number of People</th>
-              <th>Props Allowed</th>
-            </tr>
-            <tr>
-              <td>8 Minutes (15 second grace period)</td>
-              <td>No maximum (though 4-6 is reccomended)</td>
-              <td>Music stands and Scripts</td>
-            </tr>
-          </table>
-        </div>
-      </div>
-
+      <br>
     </div>
-    <!-- Grid container ends here -->
+    </a>
 
+
+    <div class="event">
+      <img src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder" style="height: 300px; width: 300px;">
+      <div class="tableformat">
+        <h2>Improvisational Duet Acting</h2>
+        <h5>Cheat Sheet</h5>
+        <table class="cheat-sheet" style="border-radius: var(--border-radius-md);">
+          <tr>
+            <th>Time Limit</th>
+            <th>Maximum Number of People</th>
+            <th>Props Allowed</th>
+          </tr>
+          <tr>
+            <td>7 Minutes (15 second grace period)</td>
+            <td><strong>Must be two people</strong></td>
+            <td>Two chairs and a table</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="event">
+      <img src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder" style="height: 300px; width: 300px;">
+      <div class="tableformat">
+        <h2>Pantomime</h2>
+        <h5>Cheat Sheet</h5>
+        <table class="cheat-sheet" style="border-radius: var(--border-radius-md);">
+          <tr>
+            <th>Time Limit</th>
+            <th>Maximum Number of People</th>
+            <th>Props Allowed</th>
+          </tr>
+          <tr>
+            <td>8 Minutes</td>
+            <td>No maximum (though 2-3 is reccomended)</td>
+            <td>1 chair per performer</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    <div class="event">
+      <img src="https://www.nomadfoods.com/wp-content/uploads/2018/08/placeholder-1-e1533569576673.png" alt="Pantomime placeholder" style="height: 300px; width: 300px;">
+      <div class="tableformat">
+        <h2>Reader's Theater</h2>
+        <h5>Cheat Sheet</h5>
+        <table class="cheat-sheet" style="border-radius: var(--border-radius-md);">
+          <tr>
+            <th>Time Limit</th>
+            <th>Maximum Number of People</th>
+            <th>Props Allowed</th>
+          </tr>
+          <tr>
+            <td>8 Minutes (15 second grace period)</td>
+            <td>No maximum (though 4-6 is reccomended)</td>
+            <td>Music stands and Scripts</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+    
   </body>
   
 </html>
