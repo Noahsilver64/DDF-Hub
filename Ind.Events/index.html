@@ -1,96 +1,173 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>ASAA DDF — Events (Demo)</title>
-  <style>
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Helvetica Neue',Arial;margin:32px;color:#111}
-    header{margin-bottom:20px}
-    h1{font-size:1.6rem;margin:0}
-    p.lead{color:#444;margin-top:6px}
-    section{margin-top:18px}
-    dl{display:grid;grid-template-columns:260px 1fr;gap:8px 18px}
-    dt{font-weight:700}
-    dd{margin:0 0 12px 0;color:#222}
-    footer{margin-top:28px;font-size:0.9rem;color:#555}
-    a.source{color:#0b66c3}
-  </style>
-</head>
-<body>
-  <header>
-    <h1>ASAA DDF — Events (Demo)</h1>
-    <p class="lead">A concise cheat-sheet listing of official ASAA DDF (Drama, Debate &amp; Forensics) events and short descriptions. Source: ASAA DDF Handbook.</p>
-  </header>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - DDF Hub</title>
+    <link rel="stylesheet" href="../ddf-style.css">
+  </head>
+  
+  <body>
+    <nav class="navbar">
+      <a href="../index.html">Home</a>
+      <a href="../debate.html">Debate</a>
+      <a href="../drama.html">Drama</a>
+      <a href="../forensics.html">Forensics</a>
+    </nav>
+       
+    <header>
+      <h1>Events</h1>
+      <p>A concise cheat-sheet listing of official ASAA DDF (Drama, Debate & Forensics) events and short descriptions.</p>
+    </header>
+    
+    <main>
+      <div class="info-section">
+        <h2 id="debate">Debate Events</h2>
+        <section class="events-grid">
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Lincoln-Douglas Debate" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Lincoln-Douglas Debate</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">One-on-one debate centered on values and philosophical propositions using the season topic.</p>
+            </div>
+          </section>
 
-  <main>
-    <section aria-labelledby="debate">
-      <h2 id="debate">Debate Events</h2>
-      <dl>
-        <dt>Lincoln-Douglas Debate</dt>
-        <dd>One-on-one debate centered on values and philosophical propositions using the season topic.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Policy Debate" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Policy Debate</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">Two-person teams argue for or against a policy resolution, emphasizing evidence, research, and plan implementation.</p>
+            </div>
+          </section>
 
-        <dt>Policy Debate</dt>
-        <dd>Two-person teams argue for or against a policy resolution, emphasizing evidence, research, and plan implementation.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Public Forum Debate" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Public Forum Debate</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">Two-person teams debate a timely public-policy topic with emphasis on clear argumentation and audience persuasion.</p>
+            </div>
+          </section>
+        </section>
+      </div>
 
-        <dt>Public Forum Debate</dt>
-        <dd>Two-person teams debate a timely public-policy topic with emphasis on clear argumentation and audience persuasion.</dd>
-      </dl>
-    </section>
+      <div class="info-section">
+        <h2 id="drama">Drama / Acting Events</h2>
+        <section class="events-grid">
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Duet Acting" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Duet Acting</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">Two performers present a memorized scene from a published play emphasizing characterization and interaction.</p>
+            </div>
+          </section>
 
-    <section aria-labelledby="drama">
-      <h2 id="drama">Drama / Acting Events</h2>
-      <dl>
-        <dt>Duet Acting</dt>
-        <dd>Two performers present a memorized scene from a published play emphasizing characterization and interaction.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Improvised Duet Acting" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Improvised Duet Acting</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">Two performers are given a prompt and limited prep time to present an improvised scene, highlighting spontaneity and teamwork.</p>
+            </div>
+          </section>
 
-        <dt>Improvised Duet Acting</dt>
-        <dd>Two performers are given a prompt and limited prep time to present an improvised scene, highlighting spontaneity and teamwork.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Solo Acting" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Solo Acting</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">A memorized monologue or scene performed by a single actor focusing on character and dramatic truth.</p>
+            </div>
+          </section>
 
-        <dt>Solo Acting</dt>
-        <dd>A memorized monologue or scene performed by a single actor focusing on character and dramatic truth.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Pantomime" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Pantomime</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">A silent, physical performance without props that tells a story through movement and gesture.</p>
+            </div>
+          </section>
 
-        <dt>Pantomime</dt>
-        <dd>A silent, physical performance without props that tells a story through movement and gesture.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Reader's Theatre" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Reader's Theatre</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">A group presentation where performers read and interpret a script emphasizing vocal expression rather than full staging.</p>
+            </div>
+          </section>
+        </section>
+      </div>
 
-        <dt>Reader's Theatre</dt>
-        <dd>A group presentation where performers read and interpret a script emphasizing vocal expression rather than full staging.</dd>
-      </dl>
-    </section>
+      <div class="info-section">
+        <h2 id="forensics">Forensics / Speech Events</h2>
+        <section class="events-grid">
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Dramatic Interpretation" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Dramatic Interpretation</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">A memorized solo performance of dramatic material from published sources focusing on emotional and textual interpretation.</p>
+            </div>
+          </section>
 
-    <section aria-labelledby="forensics">
-      <h2 id="forensics">Forensics / Speech Events</h2>
-      <dl>
-        <dt>Dramatic Interpretation</dt>
-        <dd>A memorized solo performance of dramatic material from published sources focusing on emotional and textual interpretation.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Humorous Interpretation" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Humorous Interpretation</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">A memorized solo performance using comedic material and timing drawn from published works.</p>
+            </div>
+          </section>
 
-        <dt>Humorous Interpretation</dt>
-        <dd>A memorized solo performance using comedic material and timing drawn from published works.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Duo Interpretation" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Duo Interpretation</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">Two performers present a memorized piece from a published work without directly interacting with each other for staging purposes.</p>
+            </div>
+          </section>
 
-        <dt>Duo Interpretation</dt>
-        <dd>Two performers present a memorized piece from a published work without directly interacting with each other for staging purposes.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Extemporaneous Commentary" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Extemporaneous Commentary</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">A short, conversational-style speech on a current-affairs topic prepared with limited time and minimal notes.</p>
+            </div>
+          </section>
 
-        <dt>Extemporaneous Commentary</dt>
-        <dd>A short, conversational-style speech on a current-affairs topic prepared with limited time and minimal notes.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Extemporaneous Speaking — Domestic" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Extemporaneous Speaking — Domestic (U.S.)</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">Prepared, limited-preparation speeches on U.S. current events and public affairs.</p>
+            </div>
+          </section>
 
-        <dt>Extemporaneous Speaking — Domestic (U.S.)</dt>
-        <dd>Prepared, limited-preparation speeches on U.S. current events and public affairs.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Extemporaneous Speaking — International" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Extemporaneous Speaking — International (Foreign)</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">Prepared, limited-preparation speeches on international current events and foreign affairs.</p>
+            </div>
+          </section>
 
-        <dt>Extemporaneous Speaking — International (Foreign)</dt>
-        <dd>Prepared, limited-preparation speeches on international current events and foreign affairs.</dd>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Informative Speaking" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Informative Speaking</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">A researched, memorized speech designed to inform an audience about a topic; visual aids may be optional per tournament rules.</p>
+            </div>
+          </section>
 
-        <dt>Informative Speaking</dt>
-        <dd>A researched, memorized speech designed to inform an audience about a topic; visual aids may be optional per tournament rules.</dd>
-
-        <dt>Original Oration</dt>
-        <dd>An original, memorized persuasive or inspirational speech written and delivered by the student.</dd>
-      </dl>
-    </section>
+          <section class="event-card">
+            <img src="https://via.placeholder.com/300" alt="Original Oration" class="event-img">
+            <div class="event-content">
+              <h3 style="margin: 0; font-family: 'Playfair Display', serif; font-size: 24px;">Original Oration</h3>
+              <p style="color: var(--text-light); margin: 12px 0 0 0;">An original, memorized persuasive or inspirational speech written and delivered by the student.</p>
+            </div>
+          </section>
+        </section>
+      </div>
+    </main>
 
     <footer>
-      <p>Source: <a class="source" href="http://asaa.org/wp-content/uploads/handbook/2026handbook/asaa/section/activity-specific-policies-procedures/DDF-Policies-Procedures.pdf" target="_blank" rel="noopener">ASAA DDF Policies &amp; Procedures (DDF Handbook)</a> — checked 2026-09-01 for event names and short descriptions.</p>
-      <p>If you want this styled as a printable cheat-sheet or converted into a markdown cheat-sheet, tell me which format and I'll add it.</p>
+      <p>Source: <a href="http://asaa.org/wp-content/uploads/handbook/2026handbook/asaa/section/activity-specific-policies-procedures/DDF-Policies-Procedures.pdf" target="_blank" rel="noopener noreferrer">ASAA DDF Handbook</a></p>
+      <p>Copyright © 2026 Noah Coleman</p>
     </footer>
-  </main>
-</body>
+  </body>
 </html>
