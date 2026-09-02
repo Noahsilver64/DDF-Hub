@@ -9,25 +9,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Playfair+Display:wght@700&display=swap');
 
 :root {
-    /* Color Palette — professional navy + blue accent */
-    --bg-main: #0b1020;              /* page background (deep navy) */
-    --bg-surface: #0f1724;           /* primary surfaces */
-    --surface-elevated: #111827;     /* elevated panels / cards */
-    --bg-header: #07112a;            /* page header */
-    --text-light: #e6eef8;           /* primary light text */
-    --text-dark-main: #0b1220;       /* dark text for light surfaces */
-    --text-dark-sub: #94a3b8;        /* muted subtext */
-    --brand-accent: #2563eb;         /* professional blue accent */
-    --brand-accent-hover: #1d4ed8;   /* hover accent */
-    --muted-border: rgba(230, 238, 248, 0.06);
-    --glass-overlay: rgba(255, 255, 255, 0.03);
+    /* Color Palette — warmer, brighter (cream + amber accents) */
+    --bg-main: #f3efe8;            /* page background (warm ivory) */
+    --bg-surface: #fffaf2;         /* primary surface (very light warm) */
+    --surface-elevated: #fff6ee;   /* slightly elevated panels */
+    --bg-header: #fde3c3;          /* warm header (soft peach) */
+    --text-light: #1f2937;         /* primary text (dark slate) */
+    --text-dark-main: #0b1220;     /* very dark for emphasis */
+    --text-dark-sub: #4b5563;      /* muted subtext */
+    --brand-accent: #d97706;       /* warm amber accent */
+    --brand-accent-hover: #b45309; /* darker amber hover */
+    --muted-border: rgba(15, 23, 42, 0.06);
+    --glass-overlay: rgba(11, 17, 32, 0.02);
 
     /* Borders & Box Models */
     --border-radius-lg: 16px;
     --border-radius-md: 10px;
     --border-radius-sm: 8px;
-    --box-shadow-subtle: 0 6px 20px rgba(2, 6, 23, 0.5);
-    --box-shadow-hover: 0 18px 40px rgba(2, 6, 23, 0.6);
+    --box-shadow-subtle: 0 6px 20px rgba(11, 17, 32, 0.06);
+    --box-shadow-hover: 0 18px 40px rgba(11, 17, 32, 0.08);
 }
 
 /* ==========================================
@@ -62,7 +62,7 @@ main {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
     color: var(--text-light);
-    background-color: rgba(15, 23, 42, 0.85);
+    background-color: rgba(255, 255, 255, 0.85);
     position: fixed;
     top: 0;
     left: 0;
@@ -78,7 +78,7 @@ main {
 }
 
 .navbar a {
-    color: inherit;
+    color: var(--text-light);
     text-decoration: none;
     transition: color 0.15s ease, transform 0.12s ease;
 }
@@ -95,7 +95,7 @@ main {
 header {
     text-align: center;
     background-color: var(--bg-header);
-    color: var(--text-light);
+    color: var(--text-dark-main);
     padding: 60px 40px;
     border-radius: var(--border-radius-md);
     max-width: 1140px;
@@ -127,7 +127,7 @@ header p {
     text-align: center;
     font-size: 17px;
     color: var(--text-light);
-    background-color: var(--glass-overlay);
+    background-color: var(--bg-surface);
     border: 1px solid var(--muted-border);
     border-radius: var(--border-radius-md);
 }
@@ -149,7 +149,7 @@ header p {
 .info-section h2 {
     font-family: 'Playfair Display', serif;
     font-size: 32px;
-    color: var(--text-light);
+    color: var(--text-dark-main);
     margin-bottom: 16px;
     margin-top: 40px;
 }
@@ -207,7 +207,7 @@ header p {
 .card-title {
     font-family: 'Playfair Display', serif;
     font-size: 26px;
-    color: var(--text-light);
+    color: var(--text-dark-main);
     margin-bottom: 12px;
     font-weight: 700;
     text-align: center;
@@ -227,7 +227,7 @@ header p {
     text-align: center;
     text-decoration: none;
     background-color: var(--brand-accent);
-    color: #ffffff;
+    color: #fffaf2;
     padding: 12px 24px;
     font-size: 14px;
     font-weight: 500;
@@ -265,7 +265,7 @@ header p {
     padding: 24px;
     background-color: var(--surface-elevated);
     border-radius: var(--border-radius-md);
-    box-shadow: 0 4px 18px rgba(2, 6, 23, 0.45);
+    box-shadow: 0 4px 18px rgba(11, 17, 32, 0.06);
     display: grid;
     grid-template-columns: 300px 1fr;
     gap: 28px;
@@ -275,7 +275,7 @@ header p {
 }
 
 .event-card:hover {
-    box-shadow: 0 12px 30px rgba(2, 6, 23, 0.6);
+    box-shadow: 0 12px 30px rgba(11, 17, 32, 0.08);
     transform: translateY(-4px);
 }
 
@@ -296,7 +296,7 @@ header p {
 .event-content h2 {
     font-family: 'Playfair Display', serif;
     font-size: 28px;
-    color: var(--text-light);
+    color: var(--text-dark-main);
     margin: 0;
 }
 
@@ -310,23 +310,23 @@ header p {
     font-family: 'Inter', sans-serif;
     font-size: 14px;
     color: var(--text-light);
-    background-color: rgba(255, 255, 255, 0.02);
+    background-color: rgba(11, 17, 32, 0.02);
     border-radius: var(--border-radius-sm);
     overflow: hidden;
 }
 
 .cheat-sheet th {
-    background-color: rgba(37, 99, 235, 0.12);
+    background-color: rgba(217, 119, 6, 0.10);
     padding: 12px 16px;
     text-align: left;
     font-weight: 600;
-    color: var(--text-light);
+    color: var(--text-dark-main);
     border: none;
 }
 
 .cheat-sheet td {
     padding: 12px 16px;
-    border-top: 1px solid rgba(255, 255, 255, 0.04);
+    border-top: 1px solid rgba(11, 17, 32, 0.04);
     text-align: left;
 }
 
@@ -341,7 +341,7 @@ header p {
 .event-link {
     align-self: flex-start;
     text-decoration: none;
-    color: var(--text-light);
+    color: var(--text-dark-main);
     font-weight: 500;
     padding: 10px 16px;
     border-radius: var(--border-radius-sm);
@@ -365,18 +365,18 @@ header p {
 footer {
     text-align: center;
     padding: 20px;
-    color: var(--text-light);
+    color: var(--text-dark-main);
     margin-top: 60px;
 }
 
 footer a {
-    color: inherit;
+    color: var(--brand-accent);
     text-decoration: none;
     transition: color 0.15s ease;
 }
 
 footer a:hover {
-    color: var(--brand-accent);
+    color: var(--brand-accent-hover);
 }
 
 .alumni-list {
@@ -386,7 +386,7 @@ footer a:hover {
 }
 
 .alumni-list a {
-    color: inherit;
+    color: var(--text-dark-main);
     text-decoration: none;
     transition: color 0.15s ease;
 }
