@@ -373,7 +373,7 @@ header p {
 }
 
 .events-grid:nth-child(5) {
-    grid-column: 2 / span 2; 
+    align-self: center; 
 }
 
 /* ==========================================
