@@ -324,10 +324,11 @@ header p {
 
 .events-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(2, 1fr);
     gap: 28px;
     max-width: 1200px;
     margin: 0 auto;
+    align-items: center;
 }
 
 .event-card {
@@ -518,6 +519,10 @@ footer a:hover {
     header p {
         font-size: 16px;
     }
+
+    .events-grid {
+    grid-template-columns: 1fr;
+}
 
     .event-card {
         padding: 20px;
