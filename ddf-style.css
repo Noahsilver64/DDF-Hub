@@ -332,7 +332,6 @@ header p {
 }
 
 .event-card {
-    padding: 28px;
     background-color: var(--bg-surface);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--box-shadow-subtle);
