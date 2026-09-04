@@ -372,6 +372,10 @@ header p {
     margin: 0;
 }
 
+.events-grid:nth-child(5) {
+    grid-column: 2 / span 2; 
+}
+
 /* ==========================================
    9. CHEAT SHEET TABLES
    ========================================== */
