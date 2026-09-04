@@ -190,6 +190,7 @@ header p {
     max-width: 1200px;
     margin: 50px auto;
     padding: 0 20px;
+    text-align: center;
 }
 
 .info-section h2 {
@@ -201,13 +202,16 @@ header p {
     margin-top: 50px;
     position: relative;
     padding-bottom: 12px;
+    display: inline-block;
+    width: 100%;
 }
 
 .info-section h2::after {
     content: '';
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     width: 60px;
     height: 3px;
     background: linear-gradient(90deg, var(--brand-accent), var(--accent-tertiary));
@@ -469,7 +473,7 @@ footer a:hover {
 .alumni-list {
     list-style: none;
     display: inline-block;
-    text-align: left;
+    text-align: center;
     padding: 20px 0;
 }
 
