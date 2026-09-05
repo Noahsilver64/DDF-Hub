@@ -338,7 +338,6 @@ header p {
 }
 
 .event-card {
-    padding: 28px;
     background-color: var(--bg-surface);
     border-radius: var(--border-radius-lg);
     box-shadow: var(--box-shadow-subtle);
@@ -376,6 +375,10 @@ header p {
     font-weight: 400;
     color: var(--text-dark-main);
     margin: 0;
+}
+
+.events-grid:nth-child(5) {
+    align-self: center; 
 }
 
 /* ==========================================
