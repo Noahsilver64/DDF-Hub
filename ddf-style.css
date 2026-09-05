@@ -331,6 +331,12 @@ header p {
     align-items: center;
 }
 
+.events-grid > :nth-child(5) {
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: calc(50% - 14px);
+}
+
 .event-card {
     padding: 28px;
     background-color: var(--bg-surface);
