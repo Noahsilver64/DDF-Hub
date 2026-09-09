@@ -50,7 +50,7 @@ html {
 
 body {
     margin-top: 65px;
-    font-family: 'Courier New', monospace;
+    font-family: 'slabo', serif;
     background-color: var(--bg-main);
     color: var(--text-light);
     padding: 40px 20px;
@@ -131,7 +131,7 @@ header::before {
 }
 
 header h1 {
-    font-family: 'Merriweather', serif;
+    font-family: 'slabo', serif;
     font-size: 72px;
     font-weight: 300;
     letter-spacing: 1px;
