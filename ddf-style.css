@@ -194,7 +194,7 @@ header p {
 }
 
 .info-section h2 {
-    font-family: 'Courier New', monospace;
+    font-family: 'Merriweather', serif;
     font-size: 40px;
     font-weight: 300;
     color: var(--text-dark-main);
@@ -270,7 +270,7 @@ header p {
 }
 
 .card-title {
-    font-family: 'Courier New', monospace;
+    font-family: 'Merriweather', serif;
     font-size: 28px;
     font-weight: 400;
     color: var(--text-dark-main);
@@ -278,7 +278,7 @@ header p {
 }
 
 .card-description {
-    font-family: 'Courier New', monospace;
+    font-family: 'Outfit', sans-serif;
     font-size: 15px;
     color: var(--text-dark-sub);
     line-height: 1.8;
@@ -370,7 +370,7 @@ header p {
 }
 
 .event-content h2 {
-    font-family: 'Courier New', monospace;
+    font-family: 'Merriweather', serif;
     font-size: 24px;
     font-weight: 400;
     color: var(--text-dark-main);
