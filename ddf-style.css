@@ -424,7 +424,7 @@ header p {
    ========================================== */
 
 .event-link {
-    align-self: flex-start;
+    align-self: center;
     text-decoration: none;
     color: var(--text-inverse);
     font-weight: 600;
