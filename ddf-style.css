@@ -505,6 +505,11 @@ footer a:hover {
     background-color: rgba(52, 152, 219, 0.08);
 }
 
+.author{
+    display: flex;
+    
+}
+
 /* ==========================================
    12. RESPONSIVE DESIGN
    ========================================== */
