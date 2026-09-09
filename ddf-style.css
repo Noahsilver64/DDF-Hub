@@ -194,7 +194,7 @@ header p {
 }
 
 .info-section h2 {
-    font-family: 'Merriweather', serif;
+    font-family: 'Courier New', monospace;
     font-size: 40px;
     font-weight: 300;
     color: var(--text-dark-main);
