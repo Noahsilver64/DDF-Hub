@@ -634,4 +634,9 @@ footer a:hover {
         padding: 24px 15px;
         font-size: 12px;
     }
+
+    .author img {
+        max-width: 100px;
+        max-height: 100px;
+    }
 }
