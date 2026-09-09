@@ -117,6 +117,7 @@ header {
     border: none;
     position: relative;
     overflow: hidden;
+    font-size: large;
 }
 
 header::before {
