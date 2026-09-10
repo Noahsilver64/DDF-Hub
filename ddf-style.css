@@ -514,6 +514,9 @@ footer a:hover {
     display: flex;
     align-items: center;
     margin-block: 30px;
+    background-color: var(--bg-main);
+    border-radius: var(--border-radius-sm);
+    border: 1px solid var(--muted-border);
     
 }
 
