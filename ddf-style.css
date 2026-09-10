@@ -513,15 +513,30 @@ footer a:hover {
 .author{
     display: flex;
     align-items: center;
-    background-color: var(--bg-main);
-    border-radius: var(--border-radius-sm);
+    background-color: var(--bg-surface); /* Uses card white instead of gray body bg */
+    border-radius: var(--border-radius-md);
     border: 1px solid var(--muted-border);
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto; /* Centers the author card on the page */
+    gap: 16px;         /* Adds uniform spacing between image and text */
+    box-shadow: var(--box-shadow-subtle);
 }
 
 .author img{
-    max-height: 100px;
-    max-width: 100px;
-    margin-block: 16px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%; /* Clean circular profile crop */
+    object-fit: cover;
+    flex-shrink: 0;    /* Prevents the image from compressing */
+    margin: 0;
+}
+
+.author-text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: left;
 }
 
 /* ==========================================
