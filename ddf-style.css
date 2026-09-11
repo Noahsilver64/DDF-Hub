@@ -529,7 +529,7 @@ footer a:hover {
     border-radius: 50%; /* Clean circular profile crop */
     object-fit: cover;
     flex-shrink: 0;    /* Prevents the image from compressing */
-    margin: 0;
+    margin-right: 16px;
 }
 
 .author-text {
