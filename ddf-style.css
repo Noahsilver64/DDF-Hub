@@ -540,9 +540,10 @@ footer a:hover {
 }
 
 .event-text {
+    display: flex;
     background-color: var(--bg-main);
     color: var(--text-dark-main);
-    max-width: 60%;
+    max-width: 55%;
 }
 
 /* ==========================================
