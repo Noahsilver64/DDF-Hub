@@ -539,6 +539,12 @@ footer a:hover {
     text-align: left;
 }
 
+.event-text {
+    background-color: var(--bg-main);
+    color: var(--text-dark-main);
+    max-width: 60%;
+}
+
 /* ==========================================
    12. RESPONSIVE DESIGN
    ========================================== */
