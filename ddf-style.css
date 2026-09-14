@@ -547,8 +547,9 @@ footer a:hover {
 }
 
 .resourcebox {
-    background-color: var(--bg-header);
+    background-color: black;
     border-radius: 16px;
+    margin-block: 28px;
 
 }
 
