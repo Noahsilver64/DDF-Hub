@@ -546,6 +546,12 @@ footer a:hover {
     max-width: 55%;
 }
 
+.resourcebox {
+    background-color: var(--bg-header);
+    border-radius: 16px;
+
+}
+
 /* ==========================================
    12. RESPONSIVE DESIGN
    ========================================== */
