@@ -464,9 +464,6 @@ footer {
     border-top: 1px solid var(--muted-border);
     background-color: var(--surface-elevated);
     border-radius: var(--border-radius-md);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 footer p {
@@ -528,6 +525,7 @@ footer a:hover {
     flex-shrink: 0;    /* Prevents the image from compressing */
     margin-right: 14px;
     border: 1px solid rgb(72, 74, 78);
+    box-shadow: var(--box-shadow-medium);
 }
 
 .author-text {
@@ -569,6 +567,7 @@ footer a:hover {
     padding: 20px;
     background-color: rgb(237, 242, 248);
     text-align: center;
+    box-shadow: var(--box-shadow-medium);
 }
 
 .guide-rsc a {
@@ -577,6 +576,8 @@ footer a:hover {
     border-radius: 10px;
     color: var(--text-inverse);
     text-decoration: none;
+    width: 50%;
+    margin-block: 10px
 }
 
 .warning {
@@ -598,7 +599,8 @@ footer a:hover {
     background-color: var(--text-light);
     border-radius: 16px;
     color: var(--text-inverse);
-    border: 2px dashed rgb(151, 159, 236)
+    border: 1px solid rgb(151, 159, 236);
+    box-shadow: var(--box-shadow-medium);
 }
 
 
