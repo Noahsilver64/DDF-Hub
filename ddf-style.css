@@ -512,47 +512,95 @@ footer a:hover {
 
 .author{
     display: flex;
-    align-items: center;
-    background-color: var(--bg-surface); /* Uses card white instead of gray body bg */
+    align-items: center;/* Uses card white instead of gray body bg */
     border-radius: var(--border-radius-md);
-    border: 1px solid var(--muted-border);
     padding: 20px;
-    max-width: 500px;
     margin: 20px auto; /* Centers the author card on the page */
     gap: 16px;         /* Adds uniform spacing between image and text */
-    box-shadow: var(--box-shadow-subtle);
+   
 }
 
 .author img{
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%; /* Clean circular profile crop */
     object-fit: cover;
     flex-shrink: 0;    /* Prevents the image from compressing */
-    margin-right: 16px;
+    margin-right: 14px;
+    border: 1px solid rgb(72, 74, 78);
 }
 
 .author-text {
     display: flex;
     flex-direction: column;
-    gap: 4px;
     text-align: left;
 }
 
-.event-guide {
-    display: flex;
-    align-items: left;
+.author-text h3 {
+    margin: 0;
+    font-size: 26px;
+    color: var(--text-dark-main)
+}
+
+.author-text p {
+    margin: 0;
+    font-size: 20px;
+    color: var(--text-dark-sub)
+}
+
+.event-text {
     background-color: var(--bg-main);
-    max-width: 60%;
+    max-width: 75%;
     color: var(--text-dark-main);
+    margin-right: 5%;
 }
 
 .guide-rsc {
-    background-color: var(--bg-main);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
     color: var(--text-dark-main);
-    max-width: 40%;
+    max-width: 30%;
     border-radius: 12px;
+    border: 1px solid rgb(121, 121, 121);
+    min-width: 30%;
+    margin-right: 3%;
+    margin-top: 3%;
+    padding: 20px;
+    background-color: rgb(237, 242, 248);
+    text-align: center;
 }
+
+.guide-rsc a {
+    background-color: var(--brand-accent);
+    padding: 7px;
+    border-radius: 10px;
+    color: var(--text-inverse);
+    text-decoration: none;
+}
+
+.warning {
+    margin-left: 30%;
+    padding: 10px;
+    text-align: center;
+    background-color: rgb(255, 45, 45);
+    max-width: 40%;
+    border-radius: 16px;
+    color: rgb(255, 255, 152);
+    border: 2px dashed yellow
+}
+
+.note {
+    margin-left: 15%;
+    max-width: 40%;
+    padding: 10px;
+    text-align: center;
+    background-color: var(--text-light);
+    border-radius: 16px;
+    color: var(--text-inverse);
+    border: 2px dashed rgb(151, 159, 236)
+}
+
 
 
 /* ==========================================
