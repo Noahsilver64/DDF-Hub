@@ -539,12 +539,21 @@ footer a:hover {
     text-align: left;
 }
 
-.event-text {
+.event-guide {
     display: flex;
+    align-items: left;
+    background-color: var(--bg-main);
+    max-width: 60%;
+    color: var(--text-dark-main);
+}
+
+.guide-rsc {
     background-color: var(--bg-main);
     color: var(--text-dark-main);
-    max-width: 55%;
+    max-width: 40%;
+    border-radius: 12px;
 }
+
 
 /* ==========================================
    12. RESPONSIVE DESIGN
