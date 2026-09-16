@@ -348,6 +348,7 @@ header p {
     transition: box-shadow 0.25s ease, transform 0.25s ease, border-color 0.25s ease;
     border: 1px solid var(--muted-border);
     margin-block: 16px;
+    padding: 20px;
 }
 
 .event-card:hover {
