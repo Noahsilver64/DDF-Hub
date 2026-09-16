@@ -554,12 +554,17 @@ footer a:hover {
     margin-right: 5%;
 }
 
+.text-for-scroll-padding h2 {
+    scroll-margin-top: 100px;
+}
+
 .guide-rsc {
     display: flex;
     align-items: center;
     flex-direction: column;
     color: var(--text-dark-main);
     max-width: 30%;
+    
     border-radius: 12px;
     border: 1px solid rgb(121, 121, 121);
     min-width: 30%;
@@ -579,6 +584,23 @@ footer a:hover {
     text-decoration: none;
     width: 50%;
     margin-block: 10px
+}
+
+.guide-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--text-dark-main);
+    max-width: 30%;
+    border-radius: 12px;
+    border: 1px solid rgb(121, 121, 121);
+    min-width: 30%;
+    margin-right: 3%;
+    margin-top: 3%;
+    padding: 20px;
+    background-color: rgb(237, 242, 248);
+    text-align: center;
+    box-shadow: var(--box-shadow-medium);
 }
 
 .warning {
