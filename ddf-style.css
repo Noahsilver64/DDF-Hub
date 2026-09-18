@@ -639,6 +639,15 @@ footer a:hover {
     margin-block: 30px;
 }
 
+.titlepng img {
+    position: absolute;
+    border-radius: 5px;
+    align-self: center;
+    width: 100%;
+    height: auto%;
+    margin-block: 30px;
+}
+
 
 
 /* ==========================================
