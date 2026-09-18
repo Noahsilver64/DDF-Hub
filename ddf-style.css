@@ -640,10 +640,9 @@ footer a:hover {
 }
 
 .titlepng img {
-    border-radius: 5px;
     align-self: center;
     width: 100%;
-    height: auto%;
+    height: auto;
 }
 
 
