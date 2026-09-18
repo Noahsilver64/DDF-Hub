@@ -574,6 +574,7 @@ footer a:hover {
     background-color: rgb(237, 242, 248);
     text-align: center;
     box-shadow: var(--box-shadow-medium);
+    align-self: flex-start;
 }
 
 .guide-rsc a {
@@ -584,7 +585,7 @@ footer a:hover {
     text-decoration: none;
     width: 50%;
     margin-block: 10px;
-    align-self: flex-start;
+    
 }
 
 .guide-bar {
