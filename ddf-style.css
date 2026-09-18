@@ -632,13 +632,9 @@ footer a:hover {
 
 .titlepng {
     display: flex;
-    align-items: center;
-    width: 100%;
-    height: auto;
 }
 
 .titlepng img {
-    align-self: center;
     width: 100%;
     height: auto;
 }
