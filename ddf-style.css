@@ -29,9 +29,9 @@ be warned; here be dragons.
     --border-radius-lg: 12px;
     --border-radius-md: 8px;
     --border-radius-sm: 6px;
-    --box-shadow-subtle: 0 2px 20px black;
-    --box-shadow-medium: 0 4px 24px black;
-    --box-shadow-hover: 0 8px 24px black;
+    --box-shadow-subtle: 0 2px 20px rgb(38, 38, 38);
+    --box-shadow-medium: 0 4px 24px rgb(38, 38, 38);
+    --box-shadow-hover: 0 8px 24px rgb(38, 38, 38);
 }
 
 /* ==========================================
